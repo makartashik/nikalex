@@ -1,0 +1,58 @@
+.page-header {
+  min-height: 573px;
+  font-size: 20.83px;
+  text-transform: uppercase;
+  background-image: url("../img/header-back.png");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+}
+
+.page-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.page-header__nav {
+  width: 730px;
+  padding-top: 22px;
+}
+
+.page-header__nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-left: 58px;
+  padding-right: 55px;
+  list-style: none;
+}
+
+.page-header__list-item {
+  color: #afeffa;
+  text-decoration: none;
+}
+
+.page-header__banner {
+  text-align: center;
+}
+
+.page-header__banner-title {
+  margin: 0;
+  font-family: "Minion Pro Italic", "Times New Roman", serif;
+}
+
+.page-header__slogan {
+  margin: 0 auto;
+  margin-top: 63px;
+  padding-right: 28px;
+  width: 850px;
+  color: #afeffa;
+  font-size: 33.33px;
+  text-shadow: 1px 1px 7px #ffffff;
+}
