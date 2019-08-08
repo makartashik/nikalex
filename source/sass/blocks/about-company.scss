@@ -1,0 +1,36 @@
+.about-company {
+  min-height: 604px;
+  margin-top: -23px;
+  background-image: url("../img/about-company-back.png");
+  background-repeat: no-repeat;
+}
+
+.about-company__container {
+  margin-top: 90px;
+
+  p {
+    margin: 0;
+    padding: 0 35px;
+    font-size: 37.5px;
+    line-height: 45px;
+  }
+
+  .about-company__narrow {
+    width: 840px;
+  }
+}
+
+.about-company__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-right: 30px;
+  text-align: center;
+  text-shadow: 1px -30px 120px rgba(255, 255, 255, 48%), 10px 1px 120px rgba(255, 255, 255, 48%), -10px 1px 120px rgba(255, 255, 255, 48%), 1px 30px 120px rgba(255, 255, 255, 48%);
+}
+
+@media (max-width: 500px) {
+  .about-company {
+    display: none;
+  }
+}

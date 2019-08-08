@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>NikAlex Media - Лучшее SMM продвижение</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -14,11 +15,16 @@
           <img class="page-header__logo-image" src="img/main-logo.png" alt="Логотип NikAlex Media">
           <nav class="page-header__nav">
             <ul class="page-header__nav-list" id="menu">
-              <li><a class="page-header__list-item" href="#">О нас</a></li>
-              <li><a class="page-header__list-item" href="#">Услуги</a></li>
-              <li><a class="page-header__list-item" href="#">Контакты</a></li>
+              <li class="page-header__nav-item"><a class="page-header__list-item" href="#about_us">О нас</a></li>
+              <li class="page-header__nav-item"><a class="page-header__list-item" href="#our_services">Услуги</a></li>
+              <li class="page-header__nav-item"><a class="page-header__list-item" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
+          <div class="page-header__contacts">
+            <p class="page-header__contacts-title">Бесплатная консультация</p>
+            <p class="page-header__contacts-item"><a href="tel:+79279725124" class="page-header__contacts-link">тел. +7(927)972-51-24</a></p>
+            <p class="page-header__contacts-item"><a class="page-header__contacts-link" href="mailto:nikalex-media@mail.ru">nikalex-media@mail.ru</a></p>
+          </div>
         </div>
         <div class="page-header__banner">
           <p class="page-header__banner-title">Лучшее SMM продвижение</p>
@@ -48,49 +54,65 @@
               <p>Гарантия возврата денег</p>
             </li>
           </ul>
+          <ul class="features__list-mobile">
+            <li class="features__item-mobile">
+              <p>Назовем самую минимальную цену</p>
+            </li>
+            <li class="features__item-mobile">
+              <p>Результат на следующий день</p>
+            </li>
+            <li class="features__item-mobile">
+              <p>Большой опыт работы</p>
+            </li>
+            <li class="features__item-mobile">
+              <p>Много довольных клиентов</p>
+            </li>
+            <li class="features__item-mobile">
+              <p>Гарантия возврата денег</p>
+            </li>
+          </ul>
         </section>
 
         <section class="services" id="our_services">
           <h2 class="services__title section-title">Услуги</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img class="services__image" src="img/instagram-icon.png" alt="">
               <p>Создание как бизнес, так и личных аккаунтов. <br>Продвижение с помощью таргетированной рекламы, рекламы у блогеров, коллаборации
                  с блогерами, участие в Giveaway, проведение розыгрышей и многие другие методы, максимальный охват целевой аудитории.</p>
             </li>
-            <li class="services__item">
-              <img class="services__image" src="img/facebook-icon.png" alt="">
+            <li class="services__item services__item--facebook">
               <p>Создание бизнес страницы, разработка контент плана, ведение и наполнение информацией, продвижение с помощью популярных методов.</p>
             </li>
-            <li class="services__item">
-              <img class="services__image" src="#" alt="">
+            <li class="services__item services__item--vk">
               <p>Создание и ведение группы/публичной страницы, разработка контент плана, реклама в тематических сообществах, таргетированная
                  реклама, проведение розыгрышей, максимальных охват вашей целевой аудитории.</p>
             </li>
-            <li class="services__item">
-              <img class="services__image" src="#" alt="">
+            <li class="services__item services__item--youtube">
               <p>Создание канала, съемка видео роликов, монтаж, подбор ключевых слов для вывода в топ, реклама, коллаборации с блогерами и
                  многое другое.</p>
             </li>
-            <li class="services__item">
-              <img class="services__image" src="#" alt="">
+            <li class="services__item services__item--camera">
               <p>Профессиональная съемка видео, рекламных роликов, корпоративов и т.д.</p>
             </li>
           </ul>
         </section>
 
         <section class="about-company" id="about_us">
-          <h2 class="about-company__title">О нас</h2>
-          <p>Мы дружная, молодая команда специалистов! Более 3 лет занимаемся продвижением в социальных сетях. Каждый наш сотрудник - профессионал своего дела.
-             Нам не важны ваши деньги, для нас важнее всего ваше доверие! Поэтому мы работаем на качество и в случае невыполнения обязательств мы гарантируем вернуть деньги.</p>
+          <h2 class="about-company__title section-title">О нас</h2>
+          <div class="about-company__container">
+            <p>Мы дружная, молодая команда специалистов!</p>
+            <p>Более 3 лет занимаемся продвижением в социальных сетях.</p>
+            <p>Каждый наш сотрудник - профессионал своего дела.</p>
+            <p class="about-company__narrow">Нам не важны ваши деньги, для нас важнее всего ваше доверие! Поэтому мы работаем на качество и в случае невыполнения обязательств мы гарантируем вернуть деньги.</p>
+          </div>
         </section>
       </main>
 
-      <footer class="page-footer">
-        <h2 class="page-footer__title">Контакты</h2>
+      <footer class="page-footer" id="contacts">
+        <h2 class="page-footer__title section-title">Контакты</h2>
         <p>г. Москва</p>
         <p>тел. +7(927)972-51-24</p>
-        <p>nikalex-media@mail.ru</p>
+        <p><a href="mailto:nikalex-media@mail.ru">nikalex-media@mail.ru</a></p>
       </footer>
 
     </div>

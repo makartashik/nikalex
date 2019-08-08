@@ -5,12 +5,12 @@
   background-image: url("../img/features-back.png");
   background-repeat: no-repeat;
   background-position: 52% 65%;
-  outline: 1px solid green;
+  border-top: 1px solid #ef0000;
 }
 
 .features__title {
   padding-top: 72px;
-  text-shadow: 1px 10px 30px rgba(255, 255, 255, 49%);
+  text-shadow: 1px 3px 30px rgba(255, 255, 255, 49%);
 }
 
 .features__list {
@@ -19,6 +19,18 @@
   padding: 0;
   width: 860px;
   font-size: 37.5px;
+  text-align: left;
+  list-style: none;
+}
+
+.features__list-mobile {
+  display: none;
+  margin: 0 auto;
+  margin-top: 28px;
+  padding: 0;
+  width: 100%;
+  padding-left: 30px;
+  font-size: 11px;
   text-align: left;
   list-style: none;
 }
@@ -43,5 +55,54 @@
     left: -6px;
     background-image: url("../img/red-mark.png");
     background-repeat: no-repeat;
+  }
+}
+
+.features__item-mobile {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  margin-bottom: 25px;
+
+  p {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 39px;
+    top: -3px;
+    left: -8px;
+    background-image: url("../img/red-mark_mobile.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 500px) {
+  .features {
+    width: 100%;
+    min-height: 359px;
+    text-align: center;
+    padding-left: 0;
+    background-image: url("../img/features-back_mobile.png");
+    background-position: 95% 65%;
+    border-top: none;
+  }
+
+  .features__title {
+    padding-top: 10px;
+    text-shadow: 0 -5px 12px rgba(255, 255, 255, 48%), 0 5px 12px rgba(255, 255, 255, 48%);
+  }
+
+  .features__list {
+    display: none;
+  }
+
+  .features__list-mobile {
+    display: block;
   }
 }

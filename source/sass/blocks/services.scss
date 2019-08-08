@@ -1,11 +1,13 @@
 .services {
   padding: 0 50px;
-  min-height: 1215px;
+  padding-top: 30px;
+  min-height: 1185px;
   text-align: center;
+  margin-top: -31px;
   background-image: url("../img/services-back.png");
   background-repeat: no-repeat;
-  background-position: 50%;
-  outline: 1px solid red;
+  background-position: 50% top;
+  border-top: 1px solid #ef0000;
 }
 
 .services__title {
@@ -13,31 +15,154 @@
   padding: 0;
   padding-top: 50px;
   text-shadow: 1px -30px 120px rgba(255, 255, 255, 48%), 10px 1px 120px rgba(255, 255, 255, 48%), -10px 1px 120px rgba(255, 255, 255, 48%), 1px 30px 120px rgba(255, 255, 255, 48%);
-  outline: 1px solid blue;
 }
 
 .services__list {
   margin: 0 auto;
-  margin-top: 113px;
+  margin-top: 63px;
   padding: 0;
   list-style: none;
-  outline: 1px solid red;
 }
 
 .services__item {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding-left: 7px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 180px;
+  margin-bottom: 25px;
   text-align: left;
-  outline: 1px solid pink;
 
   p {
     margin: 0;
-    margin-left: 73px;
-    margin-bottom: 100px;
     width: 700px;
     font-size: 20.83px;
     line-height: 25px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 408px;
+    height: 408px;
+    top: -100px;
+    left: -146px;
+    background-image: url("../img/instagram-icon.png");
+    background-repeat: no-repeat;
+  }
+
+  &--facebook {
+    &::before {
+      top: -128px;
+      background-image: url("../img/facebook-icon.png");
+    }
+  }
+
+  &--vk {
+    &::before {
+      width: 401px;
+      height: 375px;
+      background-image: url("../img/vk-icon.png");
+    }
+  }
+
+  &--youtube {
+    &::before {
+      width: 408px;
+      height: 427px;
+      top: -127px;
+      left: -155px;
+      background-image: url("../img/youtube-icon.png");
+    }
+  }
+
+  &--camera {
+    margin-top: 80px;
+
+    &::before {
+      width: 424px;
+      height: 412px;
+      top: -127px;
+      left: -155px;
+      background-image: url("../img/camera-icon.png");
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    padding: 0 10px;
+    padding-top: 10px;
+    min-height: 480px;
+    margin-top: -25px;
+    background-image: url("../img/services-back_mobile.png");
+    border-top: none;
+  }
+
+  .services__title {
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 -5px 10px rgba(255, 255, 255, 48%), 0 5px 10px rgba(255, 255, 255, 48%);
+  }
+
+  .services__list {
+    width: 100%;
+    margin-top: 28px;
+  }
+
+  .services__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 61px;
+    padding-right: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+
+    p {
+      margin: 0;
+      width: 100%;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-image: url("../img/instagram-icon_mobile.png");
+    }
+
+    &--facebook {
+      &::before {
+        background-image: url("../img/facebook-icon_mobile.png");
+      }
+    }
+
+    &--vk {
+      &::before {
+        height: 37px;
+        background-image: url("../img/vk-icon_mobile.png");
+      }
+    }
+
+    &--youtube {
+      &::before {
+        left: 5px;
+        background-image: url("../img/youtube-icon_mobile.png");
+      }
+    }
+
+    &--camera {
+      margin-top: 30px;
+
+      &::before {
+        width: 56px;
+        left: -5px;
+        background-image: url("../img/camera-icon_mobile.png");
+      }
+    }
   }
 }

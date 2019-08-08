@@ -3,3 +3,10 @@
   width: 1029px;
   background-color: #000000;
 }
+
+@media (max-width: 500px) {
+  .page-wrap {
+    width: 100%;
+    min-width: 320px;
+  }
+}
