@@ -26,6 +26,16 @@
   text-shadow: 0 30px 70px rgba(255, 255, 255, 0.6), 0 -30px 70px rgba(255, 255, 255, 0.6);
 }
 
+p.page-footer__developer {
+  font-size: 14px;
+  margin-top: 380px;
+  color: #bbb2b2;
+
+  a {
+    color: #bbb2b2;
+  }
+}
+
 @media (max-width: 500px) {
   .page-footer {
     min-height: 128px;
